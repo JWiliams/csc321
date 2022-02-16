@@ -1,0 +1,268 @@
+# IPython log file
+
+get_ipython().run_line_magic('ls', '')
+# Mon, 14 Feb 2022 18:41:12
+ipaddress.ip_address('192.0.2.1')
+# Mon, 14 Feb 2022 18:41:23
+import ipaddress
+# Mon, 14 Feb 2022 18:41:25
+ipaddress.ip_address('192.0.2.1')
+#[Out]# IPv4Address('192.0.2.1')
+# Mon, 14 Feb 2022 18:41:55
+ipaddress.ip_address('2001:DB8::1')
+#[Out]# IPv6Address('2001:db8::1')
+# Mon, 14 Feb 2022 18:50:05
+addr4 = ipaddress.ip_address('192.0.2.1')
+# Mon, 14 Feb 2022 18:50:09
+addr4
+#[Out]# IPv4Address('192.0.2.1')
+# Mon, 14 Feb 2022 18:50:14
+addr4.ver
+# Mon, 14 Feb 2022 18:50:19
+addr4.version
+#[Out]# 4
+# Mon, 14 Feb 2022 18:51:04
+host4 = ipaddress.ip_interface('192.2.1/24)
+# Mon, 14 Feb 2022 18:51:24
+host4 = ipaddress.ip_interface('192.0.2.1/24)
+# Mon, 14 Feb 2022 18:51:36
+host4 = ipaddress.ip_interface('192.0.2.1/24')
+# Mon, 14 Feb 2022 18:51:47
+host4.network
+#[Out]# IPv4Network('192.0.2.0/24')
+# Mon, 14 Feb 2022 18:52:22
+host6 = ipaddress.ip_interface('2001:db8::1/96')
+# Mon, 14 Feb 2022 18:52:30
+host6.network
+#[Out]# IPv6Network('2001:db8::/96')
+# Mon, 14 Feb 2022 18:53:04
+net4 = ipaddress.ip_network('192.0.2.0/24')
+# Mon, 14 Feb 2022 18:53:15
+net4.num_addresses
+#[Out]# 256
+# Mon, 14 Feb 2022 18:53:47
+net6 = ipaddress.ip_network('2001:db8::0/96')
+# Mon, 14 Feb 2022 18:53:55
+net6.num_address
+# Mon, 14 Feb 2022 18:54:09
+net6.num_addresses
+#[Out]# 4294967296
+# Mon, 14 Feb 2022 18:54:47
+net4 = ipaddress.ip_network('192.0.2.0/24')
+# Mon, 14 Feb 2022 18:55:03
+for i in net4.hosts():
+    print(i)
+    
+# Mon, 14 Feb 2022 18:56:18
+net4 = ipaddress.ip_network('192.0.2.0/24')
+# Mon, 14 Feb 2022 18:56:24
+net4.netmask
+#[Out]# IPv4Address('255.255.255.0')
+# Mon, 14 Feb 2022 18:56:32
+net4.hostmask
+#[Out]# IPv4Address('0.0.0.255')
+# Mon, 14 Feb 2022 18:57:34
+net6 = ipaddress.ip_network('2001:db8::0/96')
+# Mon, 14 Feb 2022 18:57:43
+net6.netmask
+#[Out]# IPv6Address('ffff:ffff:ffff:ffff:ffff:ffff::')
+# Mon, 14 Feb 2022 18:57:49
+net6.hostmask
+#[Out]# IPv6Address('::ffff:ffff')
+# Mon, 14 Feb 2022 18:58:27
+addr6.exploded
+# Mon, 14 Feb 2022 18:58:49
+addr6 = ipaddress.ip_address('2001:db8::1')
+# Mon, 14 Feb 2022 18:58:51
+addr6.exploded
+#[Out]# '2001:0db8:0000:0000:0000:0000:0000:0001'
+# Mon, 14 Feb 2022 18:59:20
+addr6.compressed
+#[Out]# '2001:db8::1'
+# Mon, 14 Feb 2022 18:59:31
+net6.exploaded
+# Mon, 14 Feb 2022 18:59:37
+net6.exploded
+#[Out]# '2001:0db8:0000:0000:0000:0000:0000:0000/96'
+# Mon, 14 Feb 2022 18:59:45
+net.6compressed
+# Mon, 14 Feb 2022 18:59:54
+net6.compressed
+#[Out]# '2001:db8::/96'
+# Mon, 14 Feb 2022 19:01:10
+network
+# Mon, 14 Feb 2022 19:01:17
+net4
+#[Out]# IPv4Network('192.0.2.0/24')
+# Mon, 14 Feb 2022 19:01:22
+net4[1]
+#[Out]# IPv4Address('192.0.2.1')
+# Mon, 14 Feb 2022 19:01:31
+net4[5]
+#[Out]# IPv4Address('192.0.2.5')
+# Mon, 14 Feb 2022 19:01:36
+len(net4)
+# Mon, 14 Feb 2022 19:01:50
+net4.hosts()
+#[Out]# <generator object _BaseNetwork.hosts at 0x000001B396D26B30>
+# Mon, 14 Feb 2022 19:01:55
+net4.hosts
+#[Out]# <bound method _BaseNetwork.hosts of IPv4Network('192.0.2.0/24')>
+# Mon, 14 Feb 2022 19:04:11
+addr4
+#[Out]# IPv4Address('192.0.2.1')
+# Mon, 14 Feb 2022 19:04:32
+addr4 in ipaddress.ip_network('192.0.2.1')
+#[Out]# True
+# Mon, 14 Feb 2022 19:04:47
+addr4 in ipaddress.ip_network('192.0.2.0')
+#[Out]# False
+# Mon, 14 Feb 2022 19:04:52
+addr4 in ipaddress.ip_network('192.0.2.0/24')
+#[Out]# True
+# Mon, 14 Feb 2022 19:08:11
+jwjjw@DESKTOP-V5QRLF1 MINGW64 ~
+$ cd Desktop/
+
+jwjjw@DESKTOP-V5QRLF1 MINGW64 ~/Desktop
+$ cd Text_Files/
+ls
+jwjjw@DESKTOP-V5QRLF1 MINGW64 ~/Desktop/Text_Files
+$ ls
+NetworkManagement/  command.txt        notesOnAccelemonter.txt  states.txt       whileLoopJav
+car/                computerLanguage/  notesOnInstagramAPI.txt  thingsToEat.txt  wrkToDo.txt
+census1000.xlsx     finalNotes.txt     number.txt               unit4Notes.txt
+certifications.txt  kingdomLife/       sources.txt              what2Do.txt
+circleOn.txt        notesCh4.txt       sources.txt~             whatToStudy.txt
+# Mon, 14 Feb 2022 19:08:12
+jwjjw@DESKTOP-V5QRLF1 MINGW64 ~/Desktop/Text_Files
+$ cd NetworkManagement/
+l
+jwjjw@DESKTOP-V5QRLF1 MINGW64 ~/Desktop/Text_Files/NetworkManagement
+$ ls
+ Dockerfile   a.sh~         chapter1Notes.txt   hw/        networkClass1.txt
+ a.sh        'chapter 3'/   helperHex.py        lab1.txt   payload.png
+c
+jwjjw@DESKTOP-V5QRLF1 MINGW64 ~/Desktop/Text_Files/NetworkManagement
+$ cd hw/
+
+jwjjw@DESKTOP-V5QRLF1 MINGW64 ~/Desktop/Text_Files/NetworkManagement/hw
+$ ipython
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.25.0 -- An enhanced Interactive Python. Type '?' for help.
+# Mon, 14 Feb 2022 19:08:12
+get_ipython().run_line_magic('logstart', '-ot ipaddress.log')
+Activating auto-logging. Current session state plus future input saved.
+Filename       : ipaddress.log
+Mode           : backup
+Output logging : True
+Raw input log  : False
+Timestamping   : True
+State          : active
+
+ipaddress.ip_addrss('192.0.2.1')
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-2-2f875dfb570d> in <module>
+----> 1 ipaddress.ip_addrss('192.0.2.1')
+
+NameError: name 'ipaddress' is not defined
+# Mon, 14 Feb 2022 19:08:12
+exit
+
+jwjjw@DESKTOP-V5QRLF1 MINGW64 ~/Desktop/Text_Files/NetworkManagement/hw
+$ ipaddress
+bash: ipaddress: command not found
+
+jwjjw@DESKTOP-V5QRLF1 MINGW64 ~/Desktop/Text_Files/NetworkManagement/hw
+$ ls
+ipaddress.log
+
+jwjjw@DESKTOP-V5QRLF1 MINGW64 ~/Desktop/Text_Files/NetworkManagement/hw
+$ cat ipaddress.log
+# IPython log file
+# Mon, 14 Feb 2022 19:08:13
+# Mon, 14 Feb 2022 18:35:34
+ipaddress.ip_addrss('192.0.2.1')
+# Mon, 14 Feb 2022 18:36:02
+exit()
+
+jwjjw@DESKTOP-V5QRLF1 MINGW64 ~/Desktop/Text_Files/NetworkManagement/hw
+$ ipaddress.ip_address('192.0.2.1')
+bash: syntax error near unexpected token `'192.0.2.1''
+
+jwjjw@DESKTOP-V5QRLF1 MINGW64 ~/Desktop/Text_Files/NetworkManagement/hw
+$ cat ipaddress.log
+# IPython log file
+# Mon, 14 Feb 2022 19:08:13
+# Mon, 14 Feb 2022 18:35:34
+ipaddress.ip_addrss('192.0.2.1')
+# Mon, 14 Feb 2022 18:36:02
+exit()
+# Mon, 14 Feb 2022 19:08:14
+jwjjw@DESKTOP-V5QRLF1 MINGW64 ~/Desktop/Text_Files/NetworkManagement/hw
+$ ipaddress.ip_address('192.0.2.2')
+bash: syntax error near unexpected token `'192.0.2.2''
+
+jwjjw@DESKTOP-V5QRLF1 MINGW64 ~/Desktop/Text_Files/NetworkManagement/hw
+$ cat ipaddress.log
+# IPython log file
+
+# Mon, 14 Feb 2022 18:35:34
+ipaddress.ip_addrss('192.0.2.1')
+# Mon, 14 Feb 2022 18:36:02
+exit()
+
+jwjjw@DESKTOP-V5QRLF1 MINGW64 ~/Desktop/Text_Files/NetworkManagement/hw
+$ ipython
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.25.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: ipaddress.ip_address('192.0.2.1')
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-1-9be05137c908> in <module>
+----> 1 ipaddress.ip_address('192.0.2.1')
+
+NameError: name 'ipaddress' is not defined
+
+In [2]: import ipaddress
+
+In [3]: exit
+# Mon, 14 Feb 2022 19:08:28
+ipaddress.ip_address("192.168.0.256")
+# Mon, 14 Feb 2022 19:08:47
+ipaddress.IPv4Address("192.168.0.256")
+# Mon, 14 Feb 2022 19:08:56
+ipaddress.ip_network("192.168.0.1/64")
+# Mon, 14 Feb 2022 19:09:11
+ipaddress.IPv4Network("192.168.0.1/64")
+# Mon, 14 Feb 2022 19:10:57
+try:
+    network = ipaddress.IPv4Network(address)
+except:
+    print('address/netmask is invalidfor IPv4', address)
+    
+# Mon, 14 Feb 2022 19:13:36
+try:
+    network = ipaddress.IPv4Network('192.168.0.256')
+except:
+    print('address/netmask is invalidfor IPv4', address)
+    
+# Mon, 14 Feb 2022 19:14:02
+address = ipaddress.ip_address('192.168.0.256')
+# Mon, 14 Feb 2022 19:14:20
+address = '192.168
+# Mon, 14 Feb 2022 19:14:27
+address = '192.168.0.256'
+# Mon, 14 Feb 2022 19:14:36
+try:
+    network = ipaddress.IPv4Network(address)
+except:
+    print('address/netmask is invalidfor IPv4', address)
+    
+    
+# Mon, 14 Feb 2022 19:14:52
+exit()
