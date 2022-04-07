@@ -14,7 +14,9 @@ Next is graph2.py
 The outcome of graph2.py will be domains linked to 
 hostnames that were the result of their IP addresses 
 being used in the python function "socket.getfdqn()". Also
-graph2.py will create a svg diagram of the dictionary. It will
+graph2.py will create a text document that is in the dot language. 
+Using the command "cat Diagram.txt | dot -Tsvg > output.svg" on the text document will create an svg diagram
+of the dictionary that was printed out. It will
 be called 'output.svg'. When you open it, it will be very wide.
 
 The container, docker-compose.yml.
