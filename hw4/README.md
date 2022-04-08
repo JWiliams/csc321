@@ -15,9 +15,13 @@ The outcome of graph2.py will be domains linked to
 hostnames that were the result of their IP addresses 
 being used in the python function "socket.getfdqn()". Also
 graph2.py will create a text document that is in the dot language. 
-Using the command "cat Diagram.txt | dot -Tsvg > output.svg" on the text document will create an svg diagram
+Using the command "cat Diagram.txt | dot -Tsvg -Kfdp > output.svg" on the text document will create an svg diagram
 of the dictionary that was printed out. It will
-be called 'output.svg'. When you open it, it will be very wide.
+be called 'output.svg'.
+
+### Diagram.txt
+This is written in dot language. It was created when graph2.py was
+executed. Run "cat Diagram.txt | dot -Tsvg -Kfdp > output.svg" 
 
 The container, docker-compose.yml.
 ### docker-compose.yml
@@ -26,5 +30,4 @@ This is just responsible for running a Docker container.
 The display
 ### output.svg
 This is a diagram of the outcome of graph2.py. This was created 
-with a module called Graphviz. The graph is really wide so you 
-would have to scroll.
+with a module called Graphviz. 
