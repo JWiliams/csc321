@@ -16,4 +16,6 @@ Next I did the same with the client. My command was
 I have the same goal for the task python files. The 
 first command I run is "tcpdump -i 2 -w taskvent.pcap port 5557 -vvv". Next I run "tcpdump -i 2 -w taskwork.pcap port 5557 -vvv". The sink program was running on port 5558 so the command was "tcpdump -i 2 -w tasksink.pcap port 5558 -vvv". 
 
+## Merged File
+The command I use to merge all pcap files was "mergecap -a -w full-take.pcap *.pcap".
 
